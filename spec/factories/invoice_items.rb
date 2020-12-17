@@ -2,7 +2,7 @@ FactoryBot.define do
   factory :invoice_item do
     association :item
     association :invoice
-    quanity { 5 }
-    unit_price { 12345 }
+    quanity { Faker::Number.number }
+    unit_price { Faker::Number.number }
   end
 end
