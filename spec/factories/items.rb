@@ -3,6 +3,6 @@ FactoryBot.define do
     association :merchant
     name { "#{Faker::Games::ElderScrolls.jewelry}" }
     description { "Shiny." }
-    unit_price { 12345 }
+    unit_price { Faker::Number.decimal }
   end
 end
